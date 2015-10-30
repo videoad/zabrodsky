@@ -1,0 +1,93 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+GLOBAL: HTML ELEMENTS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+html, body {
+	width: 100%; 
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: #DFDFDF; 
+	color: #000;
+	font: 16px/1.6 "Helvetica Neue", "Arial", sans-serif; 
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;	
+}
+
+a {
+	color: #07548C;
+	text-decoration: none;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+
+p, ul, ol, address {
+	margin-top: 30px;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: square;
+}
+	ul li {
+		padding-left: 5px;
+	}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+GLOBAL: LAYOUT
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#background {
+	position: absolute; 
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#pattern {
+	position: absolute; 
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: url("../design/pattern.png");
+	opacity: 0.5;
+}	
+
+#vcard {
+	overflow: hidden;
+	position: absolute; 
+	bottom: 30px;
+	left: 30px;
+	z-index: 9999;
+	width: 330px;	
+	padding: 30px 30px 30px 330px;
+	background: #FFF url("../design/photo.jpg") 0 0 no-repeat;
+}
+	#header h1 {
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 1;
+	}
+	#header h2 {
+		margin-top: 0;
+		color: #5F5F5F;
+		font-size: 30px;
+		line-height: 1;
+	}
